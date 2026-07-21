@@ -13,26 +13,43 @@
   <body>
     <header>
       <div class="logo">
-        <img src="Images/logo.png" alt="Knight Watch" />
+        <img src="Images/logo.png" alt="Knight Watch Logo" />
       </div>
-      <nav>
+      <nav class="nav-links">
         <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#index">ANIME INDEX</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="#collection">SACRED CHRONICLES</a></li>
-          <li><a href="#rankings">KNIGHT RANKINGS</a></li>
-          <li><a href="#my-list">MY WATCHLIST</a></li>
-          <li><a href="#contact">PROFILE</a></li>
-          <li><a href="#alerts">WATCH TOWER ALERTS</a></li>
-          <li><a href="#search">SEARCH</a></li>
-          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#index">Anime Index</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#collection">Sacred Chronicles</a></li>
+          <li><a href="#rankings">Knight Rankings</a></li>
+          <li><a href="#my-list">My Watchlist</a></li>
+          <li><a href="#contact">Profile</a></li>
+          <li><a href="#alerts">Watch Tower Alerts</a></li>
+          <li><a href="#search">Search</a></li>
+          <li><a href="#about">About</a></li>
         </ul>
       </nav>
-      <form action="/search-results" method="GET">
-        <input type="text" name="anime" placeholder="Search anime..." />
-        <button type="submit">⚔️ Search</button>
-      </form>
+      <div class="nav-actions">
+        <form action="/search-results" method="GET">
+          <input
+            type="text"
+            name="anime"
+            placeholder="Search anime..."
+            aria-label="Search anime"
+          />
+          <button type="submit" aria-label="Search">text</button>
+        </form>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation Menu"
+          aria-expanded="false"
+        >
+          <span>text</span>
+          <span>text</span>
+          <span>text</span>
+        </button>
+      </div>
     </header>
   </body>
 </html>
